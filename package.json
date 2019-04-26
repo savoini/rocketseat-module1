@@ -1,0 +1,7 @@
+{
+  "name": "rockeseat-module1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Gilberto Savoini <gilberto.savoini@gmail.com>",
+  "license": "MIT"
+}
