@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-    return res.send(`Bem-vindo, ${req.query.name}`);
+    return res.send(`Welcome, ${req.query.name}`);
 });
 
 
@@ -13,12 +13,12 @@ app.get('/login', (req, res) => {
 
 
 app.get('/nome/:name', (req, res) => {
-    return res.send(`Bem-vindo, ${req.params.name}`);
+    return res.send(`Welcome, ${req.params.name}`);
 });
 
 app.get('/json/:name', (req, res) => {
     return res.json({
-        message: `Bem-vindo, ${req.params.name}`
+        message: `Welcome, ${req.params.name}`
     });
 });
 
