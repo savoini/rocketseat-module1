@@ -11,6 +11,7 @@ nunjunks.configure('views', {
 });
 
 
+app.use(express.urlencoded({ extended: false}));
 app.set('view engine', 'njk');
 
 
@@ -24,6 +25,13 @@ app.get('/', (req, res) => {
 
 app.get('/new', (req, res) => {
     return res.render('new');
+});
+
+
+app.post('/create', (req, res) => {
+    console.log(req.body);
+    users.push(req.body.user);
+    return res.redirect("/");
 })
 
 
